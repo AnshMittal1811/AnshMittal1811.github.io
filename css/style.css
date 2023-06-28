@@ -1,0 +1,231 @@
+html, body {
+  margin: 0;
+  background-color: #E8E8E8;
+}
+
+.home-page{
+  background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)) no-repeat fixed, url("../images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.font-family{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hover-effect{
+  color: white;
+}
+
+.hover-effect:hover{
+  background-color: #EEEEEE;
+  color: black;
+}
+
+.text-orange{
+  color: #E57C23;
+}
+
+.bg-clr{
+  background-color: #DDDDDD;
+}
+
+a:hover{
+  cursor: pointer;
+}
+
+.nav-tabs .nav-item .nav-link{
+  color: white;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  color: black;
+  background-color: #FFA559;
+  border: none;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 990px) {
+
+  .logo{
+    width: 75px;
+    height: 75px;
+  }
+
+  .brand{
+    font-size: 3rem;
+  }
+
+  .profile{
+    height: 800px;
+    width: 800px;
+    margin-top: 250px;
+    vertical-align: middle;
+  }
+
+  .fs-a{
+    font-size: 3rem;
+  }
+
+  .fs-h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 9rem;
+  }
+
+  .font-family-h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+  }
+
+  .text-algn{
+    width: 200px;
+    height: 200px;
+  }
+
+  .fs-p{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: left !important;
+  }
+
+  .font-family-p{
+    font-size: 4rem;
+    text-align: left !important;
+  }
+
+  .ff-p{
+    font-size: 2.1rem;
+  }
+
+  .ff-head{
+    font-size: 3rem;
+  }
+
+  .card-img-top{
+    width: 40rem;
+  }
+
+  .column-lg{
+    display: none;
+  }
+
+  .hrule{
+    border-style: none;
+    border-top-style: solid;
+    border-color: black;
+    border-width: 2px;
+    width: 40%;
+  }
+
+  .item-ht{
+    width: 850px;
+    height: 500px;
+  }
+
+  .ldr_img{
+    width: 250px;
+    height: 220px;
+  }
+
+  .fs-h2{
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+  }
+
+  .contact{
+    width: 55px;
+    height: 55px;
+  }
+
+  .ftext{
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+  .logo{
+    width: 30px;
+    height: 30px;
+  }
+
+  .profile{
+    height: 300px;
+    width: 300px;
+    margin-top: 50px;
+    vertical-align: middle;
+  }
+
+  .fs-a{
+    font-size: 1.2rem;
+  }
+
+  .fs-h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+  }
+
+  .fs-h2{
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem;
+  }
+
+  .font-family-h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+  }
+
+  .text-algn{
+    width: 80px;
+    height: 80px;
+  }
+
+  .fs-p{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .font-family-p{
+    font-size: 1rem;
+    text-align: left !important;
+  }
+
+  .card-img-top{
+    width: 16rem;
+  }
+
+  .column-sm{
+    display: none;
+  }
+
+  .hrule{
+    border-style: none;
+    border-top-style: solid;
+    border-color: black;
+    border-width: 2px;
+    width: 30%;
+  }
+
+  .card-pro-top{
+    width: 25rem;
+  }
+
+  .item-ht{
+    width: 450px;
+    height: 250px;
+  }
+
+  .ldr_img{
+    width: 150px;
+    height: 120px;
+  }
+
+  .contact{
+    width: 35px;
+    height: 35px;
+  }
+
+  .ftext{
+    font-size: 0.6rem;
+  }
+}
