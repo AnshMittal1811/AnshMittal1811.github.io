@@ -4,7 +4,7 @@ html, body {
 }
 
 .home-page{
-  background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)) no-repeat fixed, url("../Images/background.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)) no-repeat fixed, url("../Images/background.jpeg") no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
   width: 100%;
