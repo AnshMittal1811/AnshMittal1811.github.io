@@ -1,46 +1,51 @@
-const tabButtons = Array.from(document.querySelectorAll('[data-tab]'));
-const tabPanels = Array.from(document.querySelectorAll('[data-panel]'));
+const resumeTabs = Array.from(document.querySelectorAll('[data-resume-tab]'));
+const resumePanels = Array.from(document.querySelectorAll('[data-resume-panel]'));
 
-function pausePanelVideos(panel) {
-  panel.querySelectorAll('video').forEach((video) => {
-    video.pause();
+function activateResumeTab(tabId) {
+  resumeTabs.forEach((tab) => {
+    const active = tab.dataset.resumeTab === tabId;
+    tab.classList.toggle('is-active', active);
+    tab.setAttribute('aria-selected', String(active));
+  });
+
+  resumePanels.forEach((panel) => {
+    panel.classList.toggle('is-active', panel.dataset.resumePanel === tabId);
   });
 }
 
-function activateTab(tabId) {
-  tabButtons.forEach((button) => {
-    const isActive = button.dataset.tab === tabId;
-    button.classList.toggle('is-active', isActive);
-    button.setAttribute('aria-selected', String(isActive));
-  });
-
-  tabPanels.forEach((panel) => {
-    const isActive = panel.dataset.panel === tabId;
-    if (!isActive) {
-      pausePanelVideos(panel);
-    }
-    panel.classList.toggle('is-active', isActive);
-  });
-}
-
-tabButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    activateTab(button.dataset.tab);
-  });
+resumeTabs.forEach((tab) => {
+  tab.addEventListener('click', () => activateResumeTab(tab.dataset.resumeTab));
 });
 
-document.addEventListener('keydown', (event) => {
-  if (!['ArrowLeft', 'ArrowRight'].includes(event.key)) {
+document.querySelectorAll('[data-project-card]').forEach((card) => {
+  const video = card.querySelector('[data-video-player]');
+  const sourceElement = card.querySelector('[data-video-sources]');
+  const prev = card.querySelector('[data-video-prev]');
+  const next = card.querySelector('[data-video-next]');
+
+  if (!(video instanceof HTMLVideoElement) || !sourceElement) {
     return;
   }
 
-  const activeIndex = tabButtons.findIndex((button) => button.classList.contains('is-active'));
-  if (activeIndex === -1) {
+  let sources = [];
+  try {
+    sources = JSON.parse(sourceElement.textContent || '[]');
+  } catch {
+    sources = [];
+  }
+
+  if (!Array.isArray(sources) || sources.length < 2) {
     return;
   }
 
-  const direction = event.key === 'ArrowRight' ? 1 : -1;
-  const nextIndex = (activeIndex + direction + tabButtons.length) % tabButtons.length;
-  tabButtons[nextIndex].focus();
-  activateTab(tabButtons[nextIndex].dataset.tab);
+  let index = 0;
+  const setVideo = (nextIndex) => {
+    index = (nextIndex + sources.length) % sources.length;
+    video.src = sources[index];
+    video.load();
+    video.play().catch(() => {});
+  };
+
+  prev?.addEventListener('click', () => setVideo(index - 1));
+  next?.addEventListener('click', () => setVideo(index + 1));
 });
