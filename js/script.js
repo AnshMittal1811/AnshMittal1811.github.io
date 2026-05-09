@@ -1,62 +1,46 @@
-var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
+const tabButtons = Array.from(document.querySelectorAll('[data-tab]'));
+const tabPanels = Array.from(document.querySelectorAll('[data-panel]'));
 
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    };
-
-function show_modal(modal_id){
-  const profModal= document.getElementById(modal_id);
-  const modalEl = new bootstrap.Modal(profModal);
-  modalEl.show();
+function pausePanelVideos(panel) {
+  panel.querySelectorAll('video').forEach((video) => {
+    video.pause();
+  });
 }
+
+function activateTab(tabId) {
+  tabButtons.forEach((button) => {
+    const isActive = button.dataset.tab === tabId;
+    button.classList.toggle('is-active', isActive);
+    button.setAttribute('aria-selected', String(isActive));
+  });
+
+  tabPanels.forEach((panel) => {
+    const isActive = panel.dataset.panel === tabId;
+    if (!isActive) {
+      pausePanelVideos(panel);
+    }
+    panel.classList.toggle('is-active', isActive);
+  });
+}
+
+tabButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    activateTab(button.dataset.tab);
+  });
+});
+
+document.addEventListener('keydown', (event) => {
+  if (!['ArrowLeft', 'ArrowRight'].includes(event.key)) {
+    return;
+  }
+
+  const activeIndex = tabButtons.findIndex((button) => button.classList.contains('is-active'));
+  if (activeIndex === -1) {
+    return;
+  }
+
+  const direction = event.key === 'ArrowRight' ? 1 : -1;
+  const nextIndex = (activeIndex + direction + tabButtons.length) % tabButtons.length;
+  tabButtons[nextIndex].focus();
+  activateTab(tabButtons[nextIndex].dataset.tab);
+});

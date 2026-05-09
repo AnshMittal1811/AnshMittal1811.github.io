@@ -1,980 +1,288 @@
 <!doctype html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8" name="description" content="Ansh Mittal's personal website">
-  <title>Ansh Mittal</title>
-  <link rel="icon" href="Images/favicon.ico" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ansh Mittal portfolio media archive with project videos, research notes, writing, and links.">
+  <title>Ansh Mittal | Project Media</title>
+  <link rel="icon" href="assets/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300;400&family=Sacramento&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css\style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="home-page">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid" id="navTabs">
-        <a class="navbar-brand text-white brand">
-          <img src="Images/logo.png" class="d-inline-block align-top ms-2 rounded logo" alt="">
-            Ansh Mittal
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerNavbar" aria-controls="headerNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="headerNavbar">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link text-white font-family fs-a" href="#abt">About</a>
-            <a class="nav-item nav-link text-white font-family fs-a ms-3" href="#edu">Education</a>
-            <div class="nav-item dropdown ms-3">
-              <a class="nav-link dropdown-toggle text-white font-family fs-a" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                Skills
-              </a>
-              <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item font-family fs-a hover-effect" href="#skill">Technical Skills</a></li>
-                <!-- <li><a class="dropdown-item font-family fs-a hover-effect" href="#leader">Leadership Skills</a></li> -->
-              </ul>
-            </div>
-            <!-- <a class="nav-item nav-link text-white font-family fs-a ms-3" href="#work">Work</a> -->
-            <!-- <a class="nav-item nav-link text-white font-family fs-a ms-3" href="#proj">Projects</a> -->
-          </div>
-        </div>
-      </div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Ansh Mittal home">
+      <img src="assets/images/profile-system-map.avif" alt="" class="brand-mark">
+      <span>Ansh Mittal</span>
+    </a>
+    <nav class="top-nav" aria-label="Primary navigation">
+      <a href="#projects">Projects</a>
+      <a href="#writing">Writing</a>
+      <a href="#gallery">Media</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <div class="text-center">
-      <img class="profile" src="Images/ansh.jpg" alt="Ansh-Profile-Img" />
-      <p class="text-white font-family fs-h1 mt-2 mb-0">I'm Ansh Mittal</p>
-      <a href="" class="typewrite text-white font-family-h3 text-decoration-none" data-period="2000" data-type='[ "a programmer.", "a problem solver.","an analytical thinker." ]'>
-        <span class="wrap"></span>
-      </a>
-    </div>
-  </div>
-  <div class="mx-auto w-75 text-center" id="abt">
-      <p class="text-dark mt-3 fs-h1">About</p>
-      <p class="text-dark fs-p">MS CS Student at USC | Ex-Data Scientist at Sociometrik </p>
-      <p class="text-dark font-family-p mt-4">
-        A problem solver with history in AI, ML, Deep Learning, Data Science, and Software Development for 3+ years. 
-        A quick-learner with a keen eye for detail. Proficient in designing and developing multiple products with different tech stack
-      </p>
-  </div>
-  <div class="container-fluid text-center bg-clr" id="edu">
-    <p class="text-dark mt-3 fs-h1">Education</p>
-    <div class="row column-lg">
-      <div class="col-md-3"></div>
-      <div class="col-md-3">
-        <p class="text-dark text-center fw-bold">August 2021 - May 2023</p>
-        <div class="card bg-dark border border-secondary mx-auto card-img-top">
-            <img class="img-fluid" alt="event-img" src='Images/usc_logo.jpg'>
-            <div class="card-body">
-              <p class="card-text text-white text-center fw-bold mb-0">University of Southern California</p>
-              <p class="card-text text-orange mb-0">Master's In Computer Science</p>
-              <p class="card-text text-orange mb-0">GPA: 3.8</p>
-            </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Machine Learning Engineer II</p>
+        <h1>Project videos, research media, and selected work.</h1>
+        <p>
+          A simple black portfolio surface for the media from my personal website. The large
+          top-panel astronomy MP4 is intentionally excluded; the project videos are kept below
+          in dedicated tabs.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View project videos</a>
+          <a class="button" href="Resume.pdf">Resume</a>
         </div>
       </div>
-      <div class="col-md-3">
-        <p class="text-dark text-center fw-bold">August 2015 - May 2019</p>
-        <div class="card bg-dark border border-secondary mx-auto card-img-top">
-            <img class="img-fluid" alt="event-img" src='Images/GGSIPU_logo.png'>
-            <div class="card-body">
-              <p class="card-text text-white text-center fw-bold mb-0">Guru Gobind Singh Indraprastha University University</p>
-              <p class="card-text text-orange mb-0">Bachelor's In Computer Science</p>
-              <p class="card-text text-orange mb-0">GPA: 8.97</p>
-            </div>
-        </div>
+      <figure class="hero-portrait">
+        <img src="assets/images/me-under-galaxy.avif" alt="Ansh under a galaxy visualization">
+      </figure>
+    </section>
+
+    <section class="stats section-shell" aria-label="Portfolio summary">
+      <div>
+        <strong>8</strong>
+        <span>project videos</span>
       </div>
-      <div class="col-md-3"></div>
-    </div>
-    <div class="row column-sm">
-      <div class="col-sm-12">
-        <p class="text-dark text-center fw-bold ff-p">August 2019 - May 2023</p>
-        <div class="card bg-dark border border-secondary mx-auto card-img-top">
-            <img class="img-fluid" alt="event-img" src='Images/usc_logo.jpg'>
-            <div class="card-body">
-              <p class="card-text text-white text-center fw-bold ff-p mb-0">University of Southern California</p>
-              <p class="card-text text-orange ff-p mb-0">Master's In Computer Science</p>
-              <p class="card-text text-orange ff-p mb-0">GPA: 3.8</p>
-            </div>
-        </div>
+      <div>
+        <strong>5</strong>
+        <span>video groups</span>
       </div>
-      <div class="col-sm-12 mt-5">
-        <p class="text-dark text-center fw-bold ff-p">August 2015 - May 2019</p>
-        <div class="card bg-dark border border-secondary mx-auto card-img-top">
-            <img class="img-fluid" alt="event-img" src='Images/GGSIPU_logo.png'>
-            <div class="card-body">
-              <p class="card-text text-white text-center fw-bold ff-p mb-0">Guru Gobind Singh Indraprastha University University</p>
-              <p class="card-text text-orange ff-p mb-0">Bachelor's In Computer Science and Engineering</p>
-              <p class="card-text text-orange ff-p mb-0">GPA: 8.97</p>
-            </div>
-        </div>
+      <div>
+        <strong>40+</strong>
+        <span>ported image assets</span>
       </div>
-    </div>
-    <div style="color: #DDDDDD;">*</div>
-  </div>
-  <div class="container-fluid text-center" id="skill">
-    <p class="text-dark mt-3 fs-h1">Technical Skills</p>
-    <div class="row column-lg">
-      <div class="col-md-2"></div>
-      <div class="col-md-4 border-end border-dark">
-      <p class="text-dark text-center fs-4 ff-p fw-bold">Backend Languages</p>
-        <img class="mx-2 mt-3 mb-3" src="Images/python.png" alt="Python" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="Images/flask.png" alt="Flask" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="Images/c-.png" alt="C" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="Images/letter-c.png" alt="C++" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="Images/scala.png" alt="Scala" width="140" height="60" />
-        <img class="mx-2 mt-3 mb-3" src="Images/r.png" alt="R" width="70" height="50" />
-        <img class="mx-2 mt-3 mb-3" src="Images/java.png" alt="Java" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="Images/nodejs.png" alt="NodeJS" width="70" height="70" />
-        <!-- <img class="mx-2 mt-3 mb-3" src="Images/express.png" alt="Express" width="100" height="70" /> -->
+      <div>
+        <strong>0</strong>
+        <span>hero MP4s loaded</span>
       </div>
-      <div class="col-md-4 border-start border-dark">
-        <p class="text-dark text-center fs-4 fw-bold fw-bold ff-p">Frontend</p>
-        <img class="mx-2 mt-3 mb-3" src="Images/html-5.png" alt="HTML" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="Images/css.png" alt="CSS" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="Images/java-script.png" alt="JavaScript" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="Images/angular.png" alt="AngularJS" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="Images/steamlit.png" alt="StreamLit" width="70" height="45" />
-        <img class="mx-2 mt-3 mb-3" src="Images/tableau.png" alt="Tableau" width="140" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="Images/powerBI.png" alt="Power BI" width="70" height="50" />
-        <img class="mx-2 mt-3 mb-3" src="Images/react.png" alt="ReactJS" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="Images/redux.png" alt="ReDUX" width="70" height="70" />
+    </section>
+
+    <section class="section-shell" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Project Videos</p>
+        <h2>Tabbed project media</h2>
+        <p>
+          Each tab focuses on one project family. Videos are local to this repository so the
+          GitHub Pages deployment does not depend on the Cloudflare media bucket.
+        </p>
       </div>
-      <div class="col-md-2"></div>
-    </div>
-    <div class="mt-1 mb-1 column-lg">
-      <hr class="mx-auto hrule" />
-    </div>
-    <div class="row column-lg">
-      <div class="col-md-2"></div>
-      <div class="col-md-4 border-end border-dark">
-        <p class="text-dark text-center fs-4 ff-p fw-bold">Databases</p>
-        <img class="mx-2 mt-3 mb-3" src="Images/sql-server.png" alt="MySQL" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="Images/postgresql.png" alt="PostgreSQL" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="Images/mongodb.png" alt="MongoDB" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="Images/cassandra.png" alt="Cassandra" width="90" height="70" />
+
+      <div class="tabs" role="tablist" aria-label="Project video categories">
+        <button class="tab-button is-active" type="button" data-tab="black-hole" role="tab" aria-selected="true">Black Hole Flow</button>
+        <button class="tab-button" type="button" data-tab="medical" role="tab" aria-selected="false">Medical Imaging</button>
+        <button class="tab-button" type="button" data-tab="fundus" role="tab" aria-selected="false">Fundus CAD</button>
+        <button class="tab-button" type="button" data-tab="world-models" role="tab" aria-selected="false">World Models</button>
+        <button class="tab-button" type="button" data-tab="ar" role="tab" aria-selected="false">AR Insurance</button>
       </div>
-      <div class="col-md-4 border-start border-dark">
-        <p class="text-dark text-center fs-4 fw-bold fw-bold ff-p">Platforms</p>
-        <img class="mx-2 mt-3 mb-3" src="Images/gcp.png" alt="GCP" width="60" height="55" />
-        <img class="mx-2 mt-3 mb-3" src="Images/aws.png" alt="AWS" width="80" height="50" />
-        <img class="mx-2 mt-3 mb-3" src="Images/github.png" alt="GitHub" width="60" height="60" />
-        <img class="mx-2 mt-3 mb-3" src="Images/docker.png" alt="Docker" width="85" height="70" />
-      </div>
-      <div class="col-md-2"></div>
-    </div>
-    <div class="mt-1 mb-1 column-lg">
-      <hr class="mx-auto hrule" />
-    </div>
-    <div class="row column-lg">
-      <div class="col-md-2"></div>
-      <div class="col-md-4 border-end border-dark">
-        <p class="text-dark text-center fs-4 ff-p fw-bold">Skills</p>
-        <img class="mx-2 mt-3 mb-3" src="Images/computervision.png" alt="Computer Vision" width="80" height="80" />
-        <img class="mx-2 mt-3 mb-3" src="Images/nlp.png" alt="NLP" width="80" height="80" />
-        <img class="mx-2 mt-3 mb-3" src="Images/nerf.png" alt="NeRF" width="220" height="80" />
-        <img class="mx-2 mt-3 mb-3" src="Images/mlsysdesign.png" alt="ML system design" width="80" height="80" />
-        <img class="mx-2 mt-3 mb-3" src="Images/computergraphics.png" alt="Computer Graphics" width="70" height="45" />
-        <img class="mx-2 mt-3 mb-3" src="Images/gpt.png" alt="GPT" width="70" height="70" />
-      </div>
-      <div class="col-md-4 border-start border-dark">
-        <p class="text-dark text-center fs-4 fw-bold fw-bold ff-p">Tools</p>
-        <img class="mx-2 mt-3 mb-3" src="Images/jupyter.png" alt="Jupyter" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="Images/vs_code.png" alt="VS Code" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="Images/colab.png" alt="Google Colab" width="110" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="Images/jenkins.png" alt="Jenkins" width="60" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="Images/airflow.png" alt="AirFlow" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="Images/terraform.png" alt="Terraform" width="80" height="80" />
-      </div>
-      <div class="col-md-2"></div>
-      <div class="mt-1 mb-1 column-lg">
-        <hr class="mx-auto hrule" />
-      </div>
-      <div class="col-sm-12 mt-5">
-        <p class="text-dark text-center fw-bold fw-bold ff-p">Python Libraries</p>
-        <img class="mx-2 mt-3 mb-3" src="Images/pandas.png" alt="Pandas" width="160" height="80" />
-        <img class="mx-2 mt-3 mb-3" src="Images/numpy.png" alt="Numpy" width="160" height="80" />
-        <img class="mx-2 mt-3 mb-3" src="Images/numba.png" alt="Numba" width="80" height="80" />
-        <img class="mx-2 mt-3 mb-3" src="Images/scikitlearn.png" alt="scikit-learn" width="140" height="80" />
-        <img class="mx-2 mt-3 mb-3" src="Images/pltoly.png" alt="Plotly" width="160" height="50" />
-        <img class="mx-2 mt-3 mb-3" src="Images/tensorflow.png" alt="TensorFlow" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="Images/Keras.png" alt="GPT" width="140" height="50" />
-        <img class="mx-2 mt-3 mb-3" src="Images/pytorch.png" alt="Pytorch" width="160" height="40" />
-        <img class="mx-2 mt-3 mb-3" src="Images/jax.png" alt="JAX" width="80" height="40" />
-      </div>
-  
-    </div>
-    <div style="color: #DDDDDD;">*</div>
-    <div class="row column-sm w-75 mx-auto">
-      <div class="col-sm-12">
-        <p class="text-dark text-center ff-p fw-bold">Backend Languages</p>
-        <img class="mx-2 mt-3 mb-3" src="images/python.png" alt="Python" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/java.png" alt="Java" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/c-.png" alt="C" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/letter-c.png" alt="C++" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/sql-server.png" alt="SQL" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/sap.png" alt="ABAP" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/nodejs.png" alt="NodeJS" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/express.png" alt="Express" width="200" height="50" />
-        <img class="mx-2 mt-3 mb-3" src="images/flask.png" alt="Flask" width="150" height="150" />
-      </div>
-      <div class="mt-1 mb-1">
-        <hr class="mx-auto hrule" />
-      </div>
-      <div class="col-sm-12 mt-5">
-        <p class="text-dark text-center fw-bold fw-bold ff-p">Frontend Languages</p>
-        <img class="mx-2 mt-3 mb-3" src="images/html-5.png" alt="HTML" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/css.png" alt="CSS" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/java-script.png" alt="JavaScript" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/ejs.png" alt="EJS" width="200" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/typescript.png" alt="TypeScript" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/angular.png" alt="AngularJS" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/bootstrap.png" alt="Bootstrap" width="400" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/android.png" alt="Android" width="160" height="160" />
-      </div>
-      <div class="mt-1 mb-1">
-        <hr class="mx-auto hrule" />
-      </div>
-      <div class="col-sm-12 mt-5">
-        <p class="text-dark text-center fw-bold fw-bold ff-p">Platforms</p>
-        <img class="mx-2 mt-3 mb-3" src="images/gcp.png" alt="GCP" width="250" height="180" />
-        <img class="mx-2 mt-3 mb-3" src="images/aws.png" alt="AWS" width="130" height="130" />
-        <img class="mx-2 mt-3 mb-3" src="Images/github.png" alt="GitHub" width="140" height="140" />
-        <img class="mx-2 mt-3 mb-3" src="images/docker.png" alt="Docker" width="150" height="150" />
-      </div>
-      <div class="mt-1 mb-1">
-        <hr class="mx-auto hrule" />
-      </div>
-      <div class="col-sm-12 mt-5">
-        <p class="text-dark text-center fw-bold fw-bold ff-p">Tools</p>
-        <img class="mx-2 mt-3 mb-3" src="images/jupyter.png" alt="Jupyter" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/vs_code.png" alt="VS Code" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/as.png" alt="Android Studio" width="300" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/colab.png" alt="Google Colab" width="200" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/eclipse.png" alt="Eclipse" width="350" height="100" />
-      </div>
-    </div>
-</div>
-  <!-- <div class="container-fluid text-center bg-clr" id="work">
-    <p class="text-dark mt-3 fs-h1">Work Experience</p>
-    <div class="row column-lg">
-      <div class="col-md-2"></div>
-      <div class="col-md-4 border-end border-dark">
-        <div class="card bg-dark border border-secondary mx-auto card-pro-top">
-            <div class="card-body">
-              <p class="card-text text-white text-center fw-bold ff-p">USC Viterbi School Of Engineering</p>
-              <p class="card-text text-orange ff-p">AI/ML Research Engineer</p>
-              <p class="card-text text-orange ff-p">Jan 2023 – May 2023</p>
-            </div>
-        </div>
-      </div>
-      <div class="col-md-4 border-start border-dark">
-      </div>
-      <div class="col-md-2"></div>
-    </div>
-    <div class="row column-lg">
-      <div class="col-md-12">
-        <p class="text-danger text-center fs-4 fw-bold ff-p">2023</p>
-      </div>
-    </div>
-    <div class="row column-lg">
-      <div class="col-md-2"></div>
-      <div class="col-md-4 border-end border-dark">
-      </div>
-      <div class="col-md-4 border-start border-dark">
-        <div class="card bg-dark border border-secondary mx-auto card-pro-top">
-            <div class="card-body">
-              <p class="card-text text-white text-center fw-bold ff-p">USC Integrated Media Systems Center lab</p>
-              <p class="card-text text-orange ff-p">Student Research Worker</p>
-              <p class="card-text text-orange ff-p">Aug 2022 – Dec 2022</p>
-            </div>
-        </div>
-      </div>
-      <div class="col-md-2"></div>
-    </div>
-    <div class="row column-lg">
-      <div class="col-md-12">
-        <p class="text-danger text-center fs-4 fw-bold ff-p">2022</p>
-      </div>
-    </div>
-    <div class="row column-lg">
-        <div class="col-md-2"></div>
-        <div class="col-md-4 border-end border-dark">
-          <div class="card bg-dark border border-secondary mx-auto card-pro-top">
-              <div class="card-body">
-                <p class="card-text text-white text-center fw-bold ff-p">Hewlett Packard Enterprise</p>
-                <p class="card-text text-orange ff-p">Sr. Application Engineer</p>
-                <p class="card-text text-orange ff-p">May 2017 – Nov 2021</p>
-                <p class="text-end mb-0"><a class="card-text text-warning ff-p text-decoration-none" onclick="show_modal('app')">Read More ></a></p>
-              </div>
+
+      <div class="tab-panel is-active" data-panel="black-hole" role="tabpanel">
+        <article class="project-intro">
+          <div>
+            <p class="eyebrow">CUDAx365 Animation Set</p>
+            <h3>Black Hole 3D Flow</h3>
           </div>
-        </div>
-        <div class="col-md-4 border-start border-dark">
-        </div>
-       <div class="col-md-2"></div>
-    </div>
-    <div class="row column-lg">
-      <div class="col-md-12">
-        <p class="text-danger text-center fs-4 fw-bold ff-p">2017</p>
-      </div>
-    </div>
-    <div class="row column-lg">
-        <div class="col-md-2"></div>
-        <div class="col-md-4 border-end border-dark">
-        </div>
-        <div class="col-md-4 border-start border-dark">
-          <div class="card bg-dark border border-secondary mx-auto card-pro-top">
-              <div class="card-body">
-                  <p class="card-text text-white text-center fw-bold ff-p">Hewlett Packard Enterprise</p>
-                  <p class="card-text text-orange ff-p">Software Development Engineer</p>
-                  <p class="card-text text-orange ff-p">Sep 2016 – Apr 2017</p>
-                  <p class="text-end mb-0"><a class="card-text text-warning ff-p text-decoration-none" onclick="show_modal('sde')">Read More ></a></p>
-              </div>
-          </div>
-       </div>
-       <div class="col-md-2"></div>
-    </div>
-    <div class="row column-lg">
-       <div class="col-md-12">
-          <p class="text-danger text-center fs-4 fw-bold ff-p">2016</p>
-      </div>
-    </div>
-    <div class="row column-sm">
-      <div class="col-sm-6 border-end border-dark">
-        <p style="color: #DDDDDD;">*</p>
-      </div>
-      <div class="col-sm-6 border-start border-dark">
-        <p style="color: #DDDDDD;">*</p>
-      </div>
-    </div>
-    <div class="row column-sm">
-      <div class="col-sm-12">
-        <div class="card bg-dark border border-secondary mx-auto card-img-top">
-            <div class="card-body">
-              <p class="card-text text-white text-center fw-bold ff-p">USC Viterbi School Of Engineering</p>
-              <p class="card-text text-orange ff-p">Teaching Assistant - CSCI 585 Database Systems</p>
-              <p class="card-text text-orange ff-p">Jan 2023 – Present</p>
-            </div>
-        </div>
-      </div>
-    </div>
-    <div class="row column-sm">
-      <div class="col-sm-6 border-end border-dark">
-        <p style="color: #DDDDDD;">*</p>
-      </div>
-      <div class="col-sm-6 border-start border-dark">
-        <p style="color: #DDDDDD;">*</p>
-      </div>
-    </div>
-    <div class="row column-sm">
-      <div class="col-sm-12">
-        <p class="text-dark text-center fw-bold ff-p">2023</p>
-      </div>
-    </div>
-    <div class="row column-sm">
-      <div class="col-sm-6 border-end border-dark">
-        <p style="color: #DDDDDD;">*</p>
-      </div>
-      <div class="col-sm-6 border-start border-dark">
-        <p style="color: #DDDDDD;">*</p>
-      </div>
-    </div>
-    <div class="row column-sm">
-      <div class="col-sm-12">
-        <div class="card bg-dark border border-secondary mx-auto card-img-top">
-            <div class="card-body">
-              <p class="card-text text-white text-center fw-bold ff-p">USC Viterbi School Of Engineering</p>
-              <p class="card-text text-orange ff-p">Teaching Assistant - DSCI 250 Intro to Data Science</p>
-              <p class="card-text text-orange ff-p">Sep 2022 – Dec 2022</p>
-            </div>
-        </div>
-      </div>
-    </div>
-    <div class="row column-sm">
-      <div class="col-sm-6 border-end border-dark">
-        <p style="color: #DDDDDD;">*</p>
-      </div>
-      <div class="col-sm-6 border-start border-dark">
-        <p style="color: #DDDDDD;">*</p>
-      </div>
-    </div>
-    <div class="row column-sm">
-      <div class="col-sm-12">
-        <p class="text-dark text-center fw-bold ff-p">2022</p>
-      </div>
-    </div>
-    <div class="row column-sm">
-      <div class="col-sm-6 border-end border-dark">
-        <p style="color: #DDDDDD;">*</p>
-      </div>
-      <div class="col-sm-6 border-start border-dark">
-        <p style="color: #DDDDDD;">*</p>
-      </div>
-    </div>
-    <div class="row column-sm">
-        <div class="col-sm-12">
-          <div class="card bg-dark border border-secondary mx-auto card-img-top">
-              <div class="card-body">
-                <p class="card-text text-white text-center fw-bold ff-p">Hewlett Packard Enterprise</p>
-                <p class="card-text text-orange ff-p">Sr. Application Engineer</p>
-                <p class="card-text text-orange ff-p">May 2017 – Nov 2021</p>
-                <p class="text-end mb-0"><a class="card-text text-warning ff-p text-decoration-none" onclick="show_modal('app')">Read More ></a></p>
-              </div>
-          </div>
-        </div>
-    </div>
-    <div class="row column-sm">
-      <div class="col-sm-6 border-end border-dark">
-        <p style="color: #DDDDDD;">*</p>
-      </div>
-      <div class="col-sm-6 border-start border-dark">
-        <p style="color: #DDDDDD;">*</p>
-      </div>
-    </div>
-    <div class="row column-sm">
-      <div class="col-sm-12">
-        <p class="text-dark text-center fw-bold ff-p">2017</p>
-      </div>
-    </div>
-    <div class="row column-sm">
-      <div class="col-sm-6 border-end border-dark">
-        <p style="color: #DDDDDD;">*</p>
-      </div>
-      <div class="col-sm-6 border-start border-dark">
-        <p style="color: #DDDDDD;">*</p>
-      </div>
-    </div>
-    <div class="row column-sm">
-        <div class="col-sm-12">
-          <div class="card bg-dark border border-secondary mx-auto card-img-top">
-              <div class="card-body">
-                  <p class="card-text text-white text-center fw-bold ff-p">Hewlett Packard Enterprise</p>
-                  <p class="card-text text-orange ff-p">Software Development Engineer</p>
-                  <p class="card-text text-orange ff-p">Sep 2016 – Apr 2017</p>
-                  <p class="text-end mb-0"><a class="card-text text-warning ff-p text-decoration-none" onclick="show_modal('sde')">Read More ></a></p>
-              </div>
-          </div>
-       </div>
-    </div>
-    <div class="row column-sm">
-      <div class="col-sm-6 border-end border-dark">
-        <p style="color: #DDDDDD;">*</p>
-      </div>
-      <div class="col-sm-6 border-start border-dark">
-        <p style="color: #DDDDDD;">*</p>
-      </div>
-    </div>
-    <div class="row column-sm">
-       <div class="col-sm-12">
-          <p class="text-dark text-center fw-bold ff-p">2016</p>
-      </div>
-    </div>
-    <div style="color: #DDDDDD;">*</div>
-  </div>
-  <div class="modal fade" id="sde" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content bg-dark text-left">
-        <div class="modal-header">
-          <p class="text-white mt-0 mb-0 ff-p">
-            Software Development Engineer @ HPE
+          <p>
+            Neural Radiance Field and MHD experiments for dynamic black-hole flow analysis,
+            graph-kernel studies, and approximation visualizations.
           </p>
-        </div>
-        <div class="modal-body">
-          <ul class="text-warning">
-            <li class="mt-2 mb-4 ff-p">
-              Implemented a highly scalable decision tree to triangulate taxes for European customers and generate GST for Indian
-e-commerce customers; enhanced accuracy by 80%.
-            </li>
-            <li class="mt-2 mb-4 ff-p">
-              Developed an import-export tariff calculation engine using dialog module to modernize trade compliance; Improved
-performance by over 50% and user acceptance by 70% compared to legacy process
-            </li>
-          </ul>
+        </article>
+        <div class="video-grid">
+          <article class="video-card">
+            <video controls muted loop playsinline preload="metadata" poster="assets/images/nerf-review.jpg">
+              <source src="assets/videos/black-hole-neural-radiance-fields/blackhole-flow-3d.mp4" type="video/mp4">
+            </video>
+            <h4>Black-hole 3D flow</h4>
+            <p>Volumetric flow visualization for dynamic astronomy scenes.</p>
+          </article>
+          <article class="video-card">
+            <video controls muted loop playsinline preload="metadata" poster="assets/images/mw-and-m31-closeup.jpg">
+              <source src="assets/videos/black-hole-neural-radiance-fields/stellar-cold-hot-flow.mp4" type="video/mp4">
+            </video>
+            <h4>Stellar cold/hot flow</h4>
+            <p>Temperature-contrast motion study for stellar material flow.</p>
+          </article>
+          <article class="video-card">
+            <video controls muted loop playsinline preload="metadata" poster="assets/images/pcsd-0230-illus-bestpapersc2020-hero.jpg">
+              <source src="assets/videos/black-hole-neural-radiance-fields/mhd-cuda-graph-combined.mp4" type="video/mp4">
+            </video>
+            <h4>MHD CUDA graph combined</h4>
+            <p>Combined graph-kernel animation for simulation pipeline review.</p>
+          </article>
+          <article class="video-card">
+            <video controls muted loop playsinline preload="metadata" poster="assets/images/andromeda-galaxy-adam-evans-wiki-1280x720.jpg">
+              <source src="assets/videos/black-hole-neural-radiance-fields/mhd-cuda-approximations.mp4" type="video/mp4">
+            </video>
+            <h4>MHD CUDA approximations</h4>
+            <p>Small approximation clip for fast visual comparisons.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="modal fade" id="app" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content bg-dark text-left">
-        <div class="modal-header">
-          <p class="text-white mt-0 mb-0 ff-p">
-            Sr. Application Developer @ HPE
+
+      <div class="tab-panel" data-panel="medical" role="tabpanel">
+        <article class="project-intro">
+          <div>
+            <p class="eyebrow">Volumetric U-Net</p>
+            <h3>3D CT Scan Segmentation</h3>
+          </div>
+          <p>
+            U-Net-style segmentation adapted from 2D slices to volumetric CT data with spatial
+            context across adjacent slices.
           </p>
-        </div>
-        <div class="modal-body">
-          <ul class="text-warning">
-            <li class="mt-2 mb-4 ff-p">
-              Managed and supervised a team of 3 onsite and 2 offshore developers to implement an intuitive healing tool to detect
-and reload orders with errors; improved productivity by 60%.
-            </li>
-            <li class="mt-2 mb-4 ff-p">
-              Spearheaded E2E development of a REST API to transform invoicing process from paper to e-invoices; 10,000+ DAU
-with over 99.9% reliability with latency < 50 ms; Utilized for government financial reporting process.
-            </li>
-            <li class="mt-2 mb-4 ff-p">
-              Created a Web Dynpro to track real-time global and regional tariff classifications of products; 75% increase in
-accuracy of yearly financial postings worth $9 billion; Enabled a Just-in-time (lean) supply chain.
-            </li>
-            <li class="mt-2 mb-4 ff-p">
-              Devised a REST security webservice; Acts as a service provider and a service consumer to fetch buyer’s exact geo
-location and perform real-time embargo screenings; Generated $24 million in revenue.
-            </li>
-            <li class="mt-2 mb-4 ff-p">
-              Designed and constructed an HTTP REST callback mechanism with bearer token authentication to share partner and
-transaction status with 5000+ customer portals in real-time.
-            </li>
-          </ul>
+        </article>
+        <div class="video-grid one-up">
+          <article class="video-card">
+            <video controls muted loop playsinline preload="metadata" poster="assets/images/brain-tumor-scan.jpg">
+              <source src="assets/videos/project-tiles/3d-ct-scan.mp4" type="video/mp4">
+            </video>
+            <h4>3D CT scan segmentation</h4>
+            <p>Volumetric scan walkthrough for segmentation pipeline presentation.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="container-fluid mx-auto text-center" id="proj">
-    <p class="text-dark mt-3 fs-h1">Projects</p>
-    <div class="row column-lg">
-      <div class="col-md-2"></div>
-      <div class="col-md-8">
-        <div class="bg-dark bg-gradient mx-auto rounded mt-2 tabs mb-5">
-            <ul class="nav nav-tabs border-dark" id="resTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="fullstack-tab" data-bs-toggle="tab" data-bs-target="#fullstack" type="button" role="tab" aria-controls="fullstack" aria-selected="true">Full Stack</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="mlproj-tab" data-bs-toggle="tab" data-bs-target="#mlproj" type="button" role="tab" aria-controls="mlproj" aria-selected="false">Machine Learning</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="aiproj-tab" data-bs-toggle="tab" data-bs-target="#aiproj" type="button" role="tab" aria-controls="aiproj" aria-selected="false">Artificial Intellingence</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="mobile-tab" data-bs-toggle="tab" data-bs-target="#mobile" type="button" role="tab" aria-controls="mobile" aria-selected="false">Mobile App Development</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="cloud-tab" data-bs-toggle="tab" data-bs-target="#cloud" type="button" role="tab" aria-controls="cloud" aria-selected="false">Cloud</button>
-              </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="fullstack" role="tabpanel" aria-labelledby="fullstack-tab">
-                <ul class="text-start">
-                  <li class="mt-3 text-warning">
-                    A distributed & highly scalable business search and reservation web application implemented
-                    using AngularJS (HTTP callbacks) for the frontend and Node.JS (real-time AXIOS call) for the backend.
-                    <a class="text-orange" href="https://frontend-dot-search12pattern.wl.r.appspot.com/" target="_blank">[Desktop App Link]</a>
-                    <a class="text-orange" href="https://va94biz18.wl.r.appspot.com/" target="_blank">[Mobile Browser Link]</a>
-                    <div class="embed-responsive embed-responsive-16by9 mt-3">
-                      <iframe class="embed-responsive-item item-ht" src="https://www.youtube.com/embed/XcUg8ju6HnQ" allowfullscreen></iframe>
-                    </div>
-                  </li>
-                  <li class="mt-3 text-warning">
-                      A full stack travel planning application; Implemented using Node.JS Express for backend, EJS for server-side rendering,
-                      Bootstrap for design, Jest test cases & JavaScript for client-side events handlers.
-                      <a class="text-orange" href="https://explore-ease-2023.wl.r.appspot.com/" target="_blank">[Desktop App Link]</a>
-                      <div class="embed-responsive embed-responsive-16by9 mt-3">
-                        <iframe class="embed-responsive-item item-ht" src="https://www.youtube.com/embed/9FFOJWXoaJM" allowfullscreen></iframe>
-                      </div>
-                      <p class="text-dark">
-                        *
-                      </p>
-                  </li>
-                </ul>
-              </div>
-            <div class="tab-pane fade show" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">
-                <ul class="text-start">
-                  <li class="mt-3 text-warning">
-                    Android application to search locations based on location proximity, reserve and manage bookings.
-                    <div class="embed-responsive embed-responsive-16by9 mt-3">
-                      <iframe class="embed-responsive-item item-ht" src="https://www.youtube.com/embed/Q4OUQvOeSss" allowfullscreen></iframe>
-                    </div>
-                    <p class="text-dark">
-                      *
-                    </p>
-                  </li>
-                </ul>
-            </div>
-          <div class="tab-pane fade show" id="aiproj" role="tabpanel" aria-labelledby="aiproj-tab">
-              <ul class="text-start">
-                <li class="mt-3 text-warning">
-                  A DNA sequence allignment through dynamic programming approach and divide & conquer approach.
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/sequence-allignment-dp-d-c" target="_blank">[GitHub Link]</a>
-                </li>
-                <li class="mt-3 text-warning">
-                  A genetic algorithmic approach for Travelling Salesman Problem using informed search.
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/genetic-algorithm-travelling-salesman-problem" target="_blank">[GitHub Link]</a>
-                </li>
-                <li class="mt-3 text-warning">
-                  A GO-Game agent that learns using min-max algorithm and alpha-beta pruning.
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/Go-Game-Agent" target="_blank">[GitHub Link]</a>
-                </li>
-              </ul>
-              <p class="text-dark">
-                *
-              </p>
+
+      <div class="tab-panel" data-panel="fundus" role="tabpanel">
+        <article class="project-intro">
+          <div>
+            <p class="eyebrow">EfficientNet B1</p>
+            <h3>Fundus Disease Classification</h3>
           </div>
-          <div class="tab-pane fade show" id="mlproj" role="tabpanel" aria-labelledby="mlproj-tab">
-              <ul class="text-start">
-                <li class="mt-3 text-warning">
-                  A Resnet50, EfficientNetB0 and VGG16 classifier to classify videos using moving averages of the video
-frames.
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/Video-Classfier-Using-Moving-Averages" target="_blank">[GitHub Link]</a>
-                </li>
-                <li class="mt-3 text-warning">
-                  A multi-layer perceptron neural network for binary classification of XOR, Gaussian, Spiral and Circle dataset.
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/MultiLayer-Perceptron-Neural-Network-Binary-Classifier" target="_blank">[GitHub Link]</a>
-                </li>
-                <li class="mt-3 text-warning">
-                  A Binary Classifier of vertebral column dataset using K-Nearest-Neighbors.
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/KNN-Binary-Classification-Of-Vertebral-Abnormality" target="_blank">[GitHub Link]</a>
-                </li>
-                <li class="mt-3 text-warning">
-                  A Linear, Multiple, and KNN Regressor to predict the Electrical Energy Output of Combined Cycle Power Plant.
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/Predicting-Electrical-Energy-Output-Using-Linear-Multiple-and-KNN-Regression" target="_blank">[GitHub Link]</a>
-                </li>
-                <li class="mt-3 text-warning">
-                  A classifier of human activities based on time series obtained by a WirelessSensor Network.
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/Human-Activity-Classification-Using-Time-Series-Dataset" target="_blank">[GitHub Link]</a>
-                </li>
-                <li class="mt-3 text-warning">
-                  A decision tree to determine if a patient has accute inflammation or has accute nephritis based on bodily symptoms. 
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/Decision-Tree-To-Detect-Accute-Nephritis" target="_blank">[GitHub Link]</a>
-                </li>
-                <li class="mt-3 text-warning">
-                  A Lasso and L1 penalized gradient boosting tree for communities and crime dataset. 
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/Lasso-And-Boosting-For-Regression" target="_blank">[GitHub Link]</a>
-                </li>
-                <li class="mt-3 text-warning">
-                  A Random Forest And XGBoost Model Trees for component failure detection in the APS system. 
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/Random-Forest-And-XGBoost-Model-Trees" target="_blank">[GitHub Link]</a>
-                </li>
-                <li class="mt-3 text-warning">
-                  A Multi-class and Multi-Label Classification Using Support Vector Machines, K-Means Clustering, and Monte Carlo Simulation for species, genus and family detection of frogs. 
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/Multi-Class-Multi-Label-Classification-Using-Support-Vector-Machines/tree/main" target="_blank">[GitHub Link]</a>
-                </li>
-              </ul>
-              <p class="text-dark">
-                *
-              </p>
-          </div>
-          <div class="tab-pane fade show" id="cloud" role="tabpanel" aria-labelledby="cloud-tab">
-              <ul class="text-start">
-                <li class="mt-3 text-warning">
-                  A Cost driven map-reduce task-level scheduling algorithm in a heterogeneous cloud environment.
-                </li>
-                <li class="mt-3 text-warning">
-                  A Website anti-spoofing technique by pattern generation and validation in a homogenous cloud environment.
-                </li>
-              </ul>
-              <p class="text-dark">
-                *
-              </p>
-          </div>
-          </div>
-          </div>
-      </div>
-      <div class="col-md-2"></div>
-    </div>
-    <div class="row column-sm">
-      <div class="col-sm-12">
-        <div class="bg-dark bg-gradient mx-auto rounded mt-2 tabs mb-5">
-            <ul class="nav nav-tabs border-dark" id="resTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active ff-p" id="fullstack-tab1" data-bs-toggle="tab" data-bs-target="#fullstack1" type="button" role="tab" aria-controls="fullstack" aria-selected="true">Full Stack</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link ff-p" id="mlproj-tab1" data-bs-toggle="tab" data-bs-target="#mlproj1" type="button" role="tab" aria-controls="mlproj" aria-selected="false">Machine Learning</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link ff-p" id="aiproj-tab1" data-bs-toggle="tab" data-bs-target="#aiproj1" type="button" role="tab" aria-controls="aiproj" aria-selected="false">Artificial Intellingence</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link ff-p" id="mobile-tab1" data-bs-toggle="tab" data-bs-target="#mobile1" type="button" role="tab" aria-controls="mobile" aria-selected="false">Mobile App Development</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link ff-p" id="cloud-tab1" data-bs-toggle="tab" data-bs-target="#cloud1" type="button" role="tab" aria-controls="mobile" aria-selected="false">Cloud</button>
-              </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="fullstack1" role="tabpanel" aria-labelledby="fullstack-tab1">
-                <ul class="text-start">
-                  <li class="mt-3 text-warning ff-p">
-                    A distributed & highly scalable business search and reservation web application implemented
-                    using AngularJS (HTTP callbacks) for the frontend and Node.JS (real-time AXIOS call) for the backend.
-                    <a class="text-orange" href="https://frontend-dot-search12pattern.wl.r.appspot.com/" target="_blank">[Desktop App Link]</a>
-                    <a class="text-orange" href="https://va94biz18.wl.r.appspot.com/" target="_blank">[Mobile Browser Link]</a>
-                    <div class="embed-responsive embed-responsive-16by9 mt-3">
-                      <iframe class="embed-responsive-item item-ht" src="https://www.youtube.com/embed/XcUg8ju6HnQ" allowfullscreen></iframe>
-                    </div>
-                  </li>
-                  <li class="mt-3 text-warning ff-p">
-                      A full stack travel planning application; Implemented using Node.JS Express for backend, EJS for server-side rendering,
-                      Bootstrap for design, Jest test cases & JavaScript for client-side events handlers.
-                      <a class="text-orange" href="https://explore-ease-2023.wl.r.appspot.com/" target="_blank">[Desktop App Link]</a>
-                      <div class="embed-responsive embed-responsive-16by9 mt-3">
-                        <iframe class="embed-responsive-item item-ht" src="https://www.youtube.com/embed/9FFOJWXoaJM" allowfullscreen></iframe>
-                      </div>
-                      <p class="text-dark">
-                        *
-                      </p>
-                  </li>
-                </ul>
-              </div>
-            <div class="tab-pane fade show" id="mobile1" role="tabpanel" aria-labelledby="mobile-tab1">
-                <ul class="text-start">
-                  <li class="mt-3 text-warning ff-p">
-                    Android application to search locations based on location proximity, reserve and manage bookings.
-                    <div class="embed-responsive embed-responsive-16by9 mt-3">
-                      <iframe class="embed-responsive-item item-ht" src="https://www.youtube.com/embed/Q4OUQvOeSss" allowfullscreen></iframe>
-                    </div>
-                    <p class="text-dark">
-                      *
-                    </p>
-                  </li>
-                </ul>
-            </div>
-          <div class="tab-pane fade show" id="aiproj1" role="tabpanel" aria-labelledby="aiproj-tab1">
-              <ul class="text-start">
-                <li class="mt-3 text-warning ff-p">
-                  A DNA sequence allignment through dynamic programming approach and divide & conquer approach.
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/sequence-allignment-dp-d-c" target="_blank">[GitHub Link]</a>
-                </li>
-                <li class="mt-3 text-warning ff-p">
-                  A genetic algorithmic approach for Travelling Salesman Problem using informed search.
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/genetic-algorithm-travelling-salesman-problem" target="_blank">[GitHub Link]</a>
-                </li>
-                <li class="mt-3 text-warning ff-p">
-                  A GO-Game agent that learns using min-max algorithm and alpha-beta pruning.
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/Go-Game-Agent" target="_blank">[GitHub Link]</a>
-                </li>
-              </ul>
-              <p class="text-dark">
-                *
-              </p>
-          </div>
-          <div class="tab-pane fade show" id="mlproj1" role="tabpanel" aria-labelledby="mlproj-tab1">
-              <ul class="text-start">
-                <li class="mt-3 text-warning ff-p">
-                  A Resnet50, EfficientNetB0 and VGG16 classifier to classify videos using moving averages of the video
-frames.
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/Video-Classfier-Using-Moving-Averages" target="_blank">[GitHub Link]</a>
-                </li>
-                <li class="mt-3 text-warning ff-p">
-                  A multi-layer perceptron neural network for binary classification of XOR, Gaussian, Spiral and Circle dataset.
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/MultiLayer-Perceptron-Neural-Network-Binary-Classifier" target="_blank">[GitHub Link]</a>
-                </li>
-                <li class="mt-3 text-warning ff-p">
-                  A Binary Classifier of vertebral column dataset using K-Nearest-Neighbors.
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/KNN-Binary-Classification-Of-Vertebral-Abnormality" target="_blank">[GitHub Link]</a>
-                </li>
-                <li class="mt-3 text-warning ff-p">
-                  A Linear, Multiple, and KNN Regressor to predict the Electrical Energy Output of Combined Cycle Power Plant.
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/Predicting-Electrical-Energy-Output-Using-Linear-Multiple-and-KNN-Regression" target="_blank">[GitHub Link]</a>
-                </li>
-                <li class="mt-3 text-warning ff-p">
-                  A classifier of human activities based on time series obtained by a WirelessSensor Network.
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/Human-Activity-Classification-Using-Time-Series-Dataset" target="_blank">[GitHub Link]</a>
-                </li>
-                <li class="mt-3 text-warning ff-p">
-                  A decision tree to determine if a patient has accute inflammation or has accute nephritis based on bodily symptoms. 
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/Decision-Tree-To-Detect-Accute-Nephritis" target="_blank">[GitHub Link]</a>
-                </li>
-                <li class="mt-3 text-warning ff-p">
-                  A Lasso and L1 penalized gradient boosting tree for communities and crime dataset. 
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/Lasso-And-Boosting-For-Regression" target="_blank">[GitHub Link]</a>
-                </li>
-                <li class="mt-3 text-warning ff-p">
-                  A Random Forest And XGBoost Model Trees for component failure detection in the APS system. 
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/Random-Forest-And-XGBoost-Model-Trees" target="_blank">[GitHub Link]</a>
-                </li>
-                <li class="mt-3 text-warning ff-p">
-                  A Multi-class and Multi-Label Classification Using Support Vector Machines, K-Means Clustering, and Monte Carlo Simulation for species, genus and family detection of frogs. 
-                  <a class="text-orange" href="https://github.com/Vinutha-Ananthachandran/Multi-Class-Multi-Label-Classification-Using-Support-Vector-Machines/tree/main" target="_blank">[GitHub Link]</a>
-                </li>
-              </ul>
-              <p class="text-dark">
-                *
-              </p>
-          </div>
-          <div class="tab-pane fade show" id="cloud1" role="tabpanel" aria-labelledby="cloud-tab1">
-              <ul class="text-start">
-                <li class="mt-3 text-warning ff-p">
-                  A Cost driven map-reduce task-level scheduling algorithm in a heterogeneous cloud environment.
-                </li>
-                <li class="mt-3 text-warning ff-p">
-                  A Website anti-spoofing technique by pattern generation and validation in a homogenous cloud environment.
-                </li>
-              </ul>
-              <p class="text-dark">
-                *
-              </p>
-          </div>
-          </div>
-          </div>
-      </div>
-    </div>
-  </div> 
-  <div class="container-fluid text-justify bg-clr" id="leader">
-    <p class="text-dark mt-3 fs-h1 text-center">Leadership & Involvement</p>
-    <div class="row column-lg">
-      <div class="col-md-2"></div>
-      <div class="col-md-8">
-        <div id="ldrCarousel" class="carousel slide bg-dark rounded mb-5" data-bs-touch="false" data-bs-interval="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="mx-auto text-start w-75">
-                <p class="text-white text-center fs-3 mt-2">2022 - Present</p>
-                <ol>
-                  <li class="mt-3 text-warning">
-                    <p class="mb-0 text-orange">Associate Director of Professional Events - USC Women in Engineering:</p>
-                    <ul class="mb-2">
-                      <li class="ms-3">Organized, and led technical development conferences for USC’s premier
-                        organization for women engineers. <a href="https://www.linkedin.com/feed/update/urn:li:activity:7044921030007541760/" target="_blank">[Details]</a>
-                      </li>
-                      <li class="ms-3">Increased outreach with industry professionals by 40% for sponsorship
-                        and mentorship – work with Nvidia, Salesforce, Meta etc. <a href="https://www.linkedin.com/posts/uscviterbiwie_an-amazing-night-for-women-in-engineering-activity-6995539841270657025-tdBA?utm_source=share&utm_medium=member_desktop" target="_blank">[Details]</a>
-                      </li>
-                    </ul>
-                    <a href="images\wie.jpg" target="_blank"><img class="ldr_img" src="Images/wie.jpg" alt="Women-In-Engineering-Bio"/></a>
-                    <a href="https://viterbiundergrad.usc.edu/diversity/women-in-engineering/" target="_blank"><img class="ldr_img" src="Images/wie_link.png" alt="Women-In-Engineering-Bio"/></a>
-                  </li>
-                  <li class="mt-3 text-warning">
-                    Member of <span class="text-orange">The Society of Women Engineers</span>.
-                  </li>
-                </ol>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="mx-auto text-start w-75">
-                <p class="text-white text-center fs-3 mt-2">2018 - 2021</p>
-                <ol>
-                  <li class="mt-3 text-warning">
-                    <p class="mb-0 text-orange">President of Technical business events:</p>
-                    <ul class="mb-2">
-                      <li class="ms-3">
-                        Led a forum at HPE to discuss new techniques and process optimization in emerging technologies.
-                      </li>
-                      <li class="ms-3">
-                        Evangelized Coaching and mentoring of new hires on ERP solutions and customer service;
-                        Trained fellow co-workers in Global Trade Compliance and ABAP domain.
-                      </li>
-                    </ul>
-                  </li>
-                </ol>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="mx-auto text-start w-75">
-                <p class="text-white text-center fs-3 mt-2">2012 - 2016</p>
-                <ol>
-                  <li class="mt-3 text-warning">
-                    <span class="text-orange">Student Council President:</span> Organized routine meetings with students and teachers regarding in-class issues and learning interruptions to discuss solutions;
-                    Organized multiple science fairs and cultural festivals.
-                  </li>
-                  <li class="mt-3 text-warning">
-                    <span class="text-orange">Undergrad Mentor:</span> Facilitated proactive mentoring activities to enhance skills in algorithms, logic building, problem solving; Performed code review.
-                  </li>
-                </ol>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#ldrCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#ldrCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <p>
+            Fundus abnormality classification across 40 labels with fine-tuned pretrained CNNs
+            for computer-aided retinal screening.
+          </p>
+        </article>
+        <div class="video-grid one-up">
+          <article class="video-card">
+            <video controls muted loop playsinline preload="metadata" poster="assets/images/on-left-the-patients-left-eye-has-no-cataract-and-all-structures-are-visible-on-right.png">
+              <source src="assets/videos/project-tiles/efficientnet-fundus-classification.mp4" type="video/mp4">
+            </video>
+            <h4>EfficientNet fundus classification</h4>
+            <p>Model output and classification flow for retinal disease screening.</p>
+          </article>
         </div>
       </div>
-      <div class="col-md-2"></div>
-    </div>
-    <div class="row column-sm">
-      <div class="col-sm-12">
-        <div id="ldrCarousel1" class="carousel slide bg-dark rounded mb-5" data-bs-touch="false" data-bs-interval="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="mx-auto text-start w-75">
-                <p class="text-white text-center mt-2 ff-head">2022 - Present</p>
-                <ol>
-                  <li class="mt-3 text-warning ff-p">
-                    <p class="mb-0 text-orange">Associate Director of Professional Events - USC Women in Engineering:</p>
-                    <ul class="mb-2">
-                      <li class="ms-3">Organized, and led technical development conferences for USC’s premier
-                        organization for women engineers. <a href="https://www.linkedin.com/feed/update/urn:li:activity:7044921030007541760/" target="_blank">[Details]</a>
-                      </li>
-                      <li class="ms-3">Increased outreach with industry professionals by 40% for sponsorship
-                        and mentorship – work with Nvidia, Salesforce, Meta etc. <a href="https://www.linkedin.com/posts/uscviterbiwie_an-amazing-night-for-women-in-engineering-activity-6995539841270657025-tdBA?utm_source=share&utm_medium=member_desktop" target="_blank">[Details]</a>
-                      </li>
-                    </ul>
-                    <a href="Images/wie.jpg" target="_blank"><img class="ldr_img" src="Images/wie.jpg" alt="Women-In-Engineering-Bio"/></a>
-                    <a href="https://viterbiundergrad.usc.edu/diversity/women-in-engineering/" target="_blank"><img class="ldr_img" src="Images/wie_link.png" alt="Women-In-Engineering-Bio"/></a>
-                  </li>
-                  <li class="mt-3 text-warning ff-p">
-                    Member of <span class="text-orange">The Society of Women Engineers</span>.
-                  </li>
-                </ol>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="mx-auto text-start w-75">
-                <p class="text-white text-center mt-2 ff-head">2018 - 2021</p>
-                <ol>
-                  <li class="mt-3 text-warning ff-p">
-                    <p class="mb-0 text-orange">President of Technical business events:</p>
-                    <ul class="mb-2">
-                      <li class="ms-3">
-                        Led a forum at HPE to discuss new techniques and process optimization in emerging technologies.
-                      </li>
-                      <li class="ms-3">
-                        Evangelized Coaching and mentoring of new hires on ERP solutions and customer service;
-                        Trained fellow co-workers in Global Trade Compliance and ABAP domain.
-                      </li>
-                    </ul>
-                  </li>
-                </ol>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="mx-auto text-start w-75">
-                <p class="text-white text-center mt-2 ff-head">2012 - 2016</p>
-                <ol>
-                  <li class="mt-3 text-warning ff-p">
-                    <span class="text-orange">Student Council President:</span> Organized routine meetings with students and teachers regarding in-class issues and learning interruptions to discuss solutions;
-                    Organized multiple science fairs and cultural festivals.
-                  </li>
-                  <li class="mt-3 text-warning ff-p">
-                    <span class="text-orange">Undergrad Mentor:</span> Facilitated proactive mentoring activities to enhance skills in algorithms, logic building, problem solving; Performed code review.
-                  </li>
-                </ol>
-              </div>
-            </div>
+
+      <div class="tab-panel" data-panel="world-models" role="tabpanel">
+        <article class="project-intro">
+          <div>
+            <p class="eyebrow">VAE + MDN-RNN + CMA-ES</p>
+            <h3>World Model Implementation</h3>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#ldrCarousel1" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#ldrCarousel1" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <p>
+            A world-model agent pattern where a CNN-VAE compresses frames, an MDN-RNN predicts
+            latent dynamics, and a compact controller is optimized over learned memory.
+          </p>
+        </article>
+        <div class="video-grid one-up">
+          <article class="video-card">
+            <video controls muted loop playsinline preload="metadata" poster="assets/images/3lch-ml-preview.jpg">
+              <source src="assets/videos/project-tiles/world-model-implementation.mp4" type="video/mp4">
+            </video>
+            <h4>World model implementation</h4>
+            <p>Latent visual model and controller demonstration.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </div> -->
-  <div class="bg-dark">
-    <p class="text-dark mt-0 mb-0">*</p>
-    <p class="text-white fs-h2 text-center mb-0">Contact Me</p>
-    <div class="mx-auto text-center">
-      <a href="https://www.linkedin.com/in/mittalansh/" target="_blank"><img class="contact ms-3 mt-3" src="Images\linkedin.png" alt="LinkedIn"/></a>
-      <a href="https://scholar.google.com/citations?user=rG4ZgtMAAAAJ" target="_blank"><img class="contact ms-3 mt-3" src="Images\scholar.png" alt="Scholar"/></a>
-      <a href="https://medium.com/@anshm18111996/" target="_blank"><img class="contact ms-3 mt-3" src="Images\medium.png" alt="Medium"/></a>
-      <a href="https://github.com/AnshMittal1811" target="_blank"><img class="contact ms-3 mt-3" src="images\github.png" alt="GitHub"/></a>
-      <a href="mailto:anshm@usc.edu" target="_blank"><img class="contact ms-3 mt-3" src="Images\gmail.png" alt="Gmail"/></a>
-      <a href="Resume.pdf" target="_blank" download><img class="contact ms-3 mt-3" src="Images\curriculum-vitae.png" alt="Resume"/></a>
-    </div>
-    <p class="text-center text-warning mt-3 mb-0 ftext">
-      Copyright &#169; <a class="text-warning text-decoration-none" href="https://anshmittal1811.github.io/Personal-Website/" target="_self">2023 Ansh Mittal.</a> All rights reserved.
-    </p>
-    <p class="text-dark mt-0 mb-0">*</p>
-  </div>
+
+      <div class="tab-panel" data-panel="ar" role="tabpanel">
+        <article class="project-intro">
+          <div>
+            <p class="eyebrow">AR + AI Insurance</p>
+            <h3>AR Insurance Prototype</h3>
+          </div>
+          <p>
+            An AR insurance workflow for inspecting policy objects and claim context in-place,
+            with a path toward guided capture and damage triage.
+          </p>
+        </article>
+        <div class="video-grid one-up">
+          <article class="video-card">
+            <video controls muted loop playsinline preload="metadata" poster="assets/images/guess-who-game.jpg">
+              <source src="assets/videos/project-tiles/ar-insurim-first-app-test.mp4" type="video/mp4">
+            </video>
+            <h4>AR INSURIM first app test</h4>
+            <p>Prototype app interaction for AR claim inspection.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell split-section" id="writing">
+      <div class="section-heading">
+        <p class="eyebrow">Writing and Research</p>
+        <h2>Selected notes from the personal site</h2>
+      </div>
+      <div class="article-grid">
+        <a class="article-card" href="https://medium.com/@anshm18111996/unveiling-the-dynamic-universe-with-neural-radiance-fields-a-journey-into-black-hole-tomography-1c34cee15e80">
+          <img src="assets/images/nerf-review.jpg" alt="">
+          <span>Research log</span>
+          <h3>Neural Radiance Fields and black-hole tomography</h3>
+        </a>
+        <a class="article-card" href="https://github.com/AnshMittal1811/MachineLearning-AI">
+          <img src="assets/images/250-days-machine-learning-ai.avif" alt="">
+          <span>Build diary</span>
+          <h3>250 days of Machine Learning and Artificial Intelligence</h3>
+        </a>
+        <a class="article-card" href="https://medium.com/@anshm18111996/what-are-we-all-missing-in-the-night-sky-4f29615a82d2">
+          <img src="assets/images/night-sky-missing-spectrum.avif" alt="">
+          <span>Astronomy</span>
+          <h3>What are we all missing in the night sky?</h3>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-shell" id="gallery">
+      <div class="section-heading">
+        <p class="eyebrow">Media Archive</p>
+        <h2>Images ported from the personal website</h2>
+        <p>
+          A compact gallery of project, course, astronomy, and research media copied from the
+          existing site. The old icon library remains in the repository for compatibility.
+        </p>
+      </div>
+      <div class="gallery-grid">
+        <img src="assets/images/profile-system-map.avif" alt="Profile system map">
+        <img src="assets/images/multispectral-images-of-space.jpeg" alt="Multispectral space imagery">
+        <img src="assets/images/galaxy-morphology.jpg" alt="Galaxy morphology">
+        <img src="assets/images/brain-tumor-scan.jpg" alt="Brain tumor scan">
+        <img src="assets/images/pneumonia-xray.jpg" alt="Pneumonia X-ray">
+        <img src="assets/images/guess-who-game.png" alt="Guess Who game">
+        <img src="assets/images/ml-course.png" alt="Machine learning course artwork">
+        <img src="assets/images/aws-course1.jpg" alt="AWS course artwork">
+      </div>
+    </section>
+
+    <section class="section-shell contact-section" id="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Research, projects, and engineering work.</h2>
+        <p>
+          Reach out for machine learning systems, computer vision, graphics, LLM optimization,
+          and applied research collaborations.
+        </p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:manshm1811@gmail.com">Email</a>
+        <a href="https://github.com/AnshMittal1811">GitHub</a>
+        <a href="https://www.linkedin.com/in/mittalansh/">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=rG4ZgtMAAAAJ&hl=en">Scholar</a>
+        <a href="https://medium.com/@anshm18111996/">Medium</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Built as a static GitHub Pages media archive.</span>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

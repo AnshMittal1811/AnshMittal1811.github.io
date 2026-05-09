@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">SAVCHOI publication artwork</title>
+  <desc id="desc">Dark placeholder artwork for the SAVCHOI suspicious activity detection paper.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#08121a"/>
+      <stop offset="55%" stop-color="#10242a"/>
+      <stop offset="100%" stop-color="#04070b"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" x2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect x="110" y="110" width="980" height="455" rx="28" fill="#0b1520" stroke="#284456"/>
+  <g stroke="#1f3342" stroke-width="2">
+    <path d="M160 180h880M160 255h880M160 330h880M160 405h880M160 480h880"/>
+    <path d="M250 145v390M400 145v390M550 145v390M700 145v390M850 145v390M1000 145v390"/>
+  </g>
+  <g fill="none" stroke="url(#scan)" stroke-width="5">
+    <rect x="250" y="245" width="160" height="205" rx="20"/>
+    <rect x="620" y="205" width="225" height="265" rx="20"/>
+  </g>
+  <g fill="#d1fae5">
+    <circle cx="315" cy="315" r="20"/>
+    <circle cx="346" cy="315" r="20"/>
+    <circle cx="330" cy="360" r="26"/>
+    <circle cx="710" cy="300" r="28"/>
+    <circle cx="765" cy="300" r="28"/>
+    <circle cx="737" cy="365" r="34"/>
+  </g>
+  <text x="110" y="615" fill="#e6fffb" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700">
+    SAVCHOI
+  </text>
+  <text x="320" y="615" fill="#99f6e4" font-family="Arial, Helvetica, sans-serif" font-size="28">
+    Suspicious activity detection with human-object interaction cues
+  </text>
+</svg>

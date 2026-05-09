@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">CEBT publication artwork</title>
+  <desc id="desc">Dark placeholder artwork for the cybersecurity enhancement through blockchain training paper.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#07111f"/>
+      <stop offset="55%" stop-color="#101b33"/>
+      <stop offset="100%" stop-color="#05070d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <g opacity="0.18" stroke="#38bdf8" stroke-width="2" fill="none">
+    <path d="M90 110h230v130H90z"/>
+    <path d="M450 95h300v150H450z"/>
+    <path d="M860 130h250v120H860z"/>
+    <path d="M160 420h260v110H160z"/>
+    <path d="M530 400h220v140H530z"/>
+    <path d="M850 390h170v115H850z"/>
+    <path d="M205 175 600 170 985 190"/>
+    <path d="M290 475 640 470 930 447"/>
+    <path d="M205 175 290 475"/>
+    <path d="M600 170 640 470"/>
+    <path d="M985 190 930 447"/>
+  </g>
+  <g transform="translate(110 115)">
+    <rect x="0" y="0" width="270" height="180" rx="24" fill="#0f172a" stroke="#334155"/>
+    <rect x="24" y="30" width="222" height="120" rx="18" fill="#111827"/>
+    <rect x="70" y="60" width="130" height="28" rx="14" fill="#1d4ed8" opacity="0.85"/>
+    <rect x="80" y="102" width="112" height="28" rx="14" fill="#38bdf8" opacity="0.85"/>
+  </g>
+  <g transform="translate(770 88)">
+    <rect x="0" y="0" width="250" height="250" rx="28" fill="#0b1220" stroke="#334155"/>
+    <g transform="translate(55 55)" fill="none" stroke="url(#accent)" stroke-width="8">
+      <rect x="0" y="0" width="140" height="140" rx="18"/>
+      <path d="M70 0v140M0 70h140"/>
+      <path d="M28 28h84v84H28z" opacity="0.55"/>
+    </g>
+  </g>
+  <text x="110" y="565" fill="#e5eefc" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700">
+    Cybersecurity Enhancement through Blockchain Training
+  </text>
+  <text x="110" y="615" fill="#7dd3fc" font-family="Arial, Helvetica, sans-serif" font-size="28">
+    Serious game research • representative publication artwork
+  </text>
+</svg>

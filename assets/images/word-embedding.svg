@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Word embedding publication artwork</title>
+  <desc id="desc">Dark placeholder artwork for the debiasing gender biased Hindi words paper.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#12051c"/>
+      <stop offset="45%" stop-color="#26103c"/>
+      <stop offset="100%" stop-color="#0b0d17"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <g fill="none" stroke="url(#accent)" stroke-width="3" opacity="0.36">
+    <circle cx="230" cy="320" r="86"/>
+    <circle cx="420" cy="210" r="64"/>
+    <circle cx="540" cy="420" r="70"/>
+    <circle cx="760" cy="235" r="76"/>
+    <circle cx="930" cy="390" r="94"/>
+    <path d="M230 320 420 210 760 235 930 390 540 420 230 320"/>
+    <path d="M420 210 540 420"/>
+    <path d="M760 235 540 420"/>
+  </g>
+  <g fill="#fdf2f8" font-family="Arial, Helvetica, sans-serif">
+    <text x="110" y="150" font-size="64" font-weight="700">Word Embedding</text>
+    <text x="110" y="210" font-size="30" fill="#f9a8d4">Bias analysis • Hindi language processing</text>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="26">
+    <text x="135" y="352" fill="#fde68a">gender</text>
+    <text x="365" y="205" fill="#a5f3fc">vector</text>
+    <text x="498" y="430" fill="#fbcfe8">semantics</text>
+    <text x="710" y="225" fill="#bfdbfe">embedding</text>
+    <text x="870" y="402" fill="#ddd6fe">debias</text>
+  </g>
+</svg>
