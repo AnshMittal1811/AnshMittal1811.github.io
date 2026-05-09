@@ -423,6 +423,18 @@ video {
   margin-bottom: 0;
 }
 
+.project-points {
+  margin: 0.8rem 0 0;
+  padding-left: 1rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.project-points li + li {
+  margin-top: 0.35rem;
+}
+
 .course-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }

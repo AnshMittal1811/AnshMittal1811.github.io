@@ -234,7 +234,12 @@
           <div class="project-body">
             <p class="eyebrow">NeRF + Astronomy</p>
             <h3>Black Hole 3D Flow</h3>
-            <p>CUDAx365 black-hole simulations and Neural Radiance Field experiments for dynamic hot/cold stellar flow analysis.</p>
+            <p>CUDAx365 black-hole simulations and Neural Radiance Field experiments for dynamic stellar flow analysis.</p>
+            <ul class="project-points">
+              <li>Visualizes black-hole and stellar hot/cold flow as project media.</li>
+              <li>Connects NeRF-style scene representation with astronomy simulation outputs.</li>
+              <li>Uses multiple clips so the tile can cycle through related flow studies.</li>
+            </ul>
             <script type="application/json" data-video-sources>
               ["assets/videos/black-hole-neural-radiance-fields/blackhole-flow-3d.mp4","assets/videos/black-hole-neural-radiance-fields/stellar-cold-hot-flow.mp4"]
             </script>
@@ -253,6 +258,11 @@
             <p class="eyebrow">CUDA Graphs</p>
             <h3>MHD CUDA Flow Studies</h3>
             <p>Magnetohydrodynamic graph-kernel animations and approximation studies for GPU simulation review.</p>
+            <ul class="project-points">
+              <li>Compares CUDA graph combined execution with approximation-focused simulation clips.</li>
+              <li>Frames solver behavior for faster inspection of GPU kernel experiments.</li>
+              <li>Supports the CUDAx365 workstream around simulation throughput and replay patterns.</li>
+            </ul>
             <script type="application/json" data-video-sources>
               ["assets/videos/black-hole-neural-radiance-fields/mhd-cuda-graph-combined.mp4","assets/videos/black-hole-neural-radiance-fields/mhd-cuda-approximations.mp4"]
             </script>
@@ -269,6 +279,11 @@
             <p class="eyebrow">3D Medical Imaging</p>
             <h3>3D CT Scan Segmentation</h3>
             <p>Volumetric U-Net-style segmentation using 3D feature blocks, skip connections, and slice-to-slice context.</p>
+            <ul class="project-points">
+              <li>Extends 2D slice segmentation ideas into volumetric CT scan processing.</li>
+              <li>Uses neighboring-slice context to improve spatial consistency.</li>
+              <li>Targets medical imaging workflows where local and global structure both matter.</li>
+            </ul>
           </div>
         </article>
 
@@ -282,6 +297,11 @@
             <p class="eyebrow">Fundus CAD</p>
             <h3>EfficientNet Fundus Classification</h3>
             <p>Fine-tuned CNN models for 40 retinal disease and abnormality labels with practical screening workflows.</p>
+            <ul class="project-points">
+              <li>Uses EfficientNet-style fine tuning for multi-label retinal abnormality classification.</li>
+              <li>Supports computer-aided diagnosis workflows for fundus screening.</li>
+              <li>Complements FuNet-40 publication work on ensemble pretrained convolution models.</li>
+            </ul>
           </div>
         </article>
 
@@ -295,6 +315,29 @@
             <p class="eyebrow">World Models</p>
             <h3>World Model Implementation</h3>
             <p>CNN-VAE latent compression, MDN-RNN memory, and CMA-ES controller optimization over learned state dynamics.</p>
+            <ul class="project-points">
+              <li>Compresses visual observations into compact latent states using a CNN-VAE.</li>
+              <li>Models future latent dynamics with an MDN-RNN memory component.</li>
+              <li>Optimizes a controller with CMA-ES over the learned latent environment.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card" data-project-card>
+          <div class="video-frame">
+            <video autoplay muted loop playsinline preload="metadata" poster="assets/images/pcsd-0230-illus-bestpapersc2020-hero.jpg" data-video-player>
+              <source src="assets/videos/project-tiles/generated/qec-decoder-performance.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-body">
+            <p class="eyebrow">CUDA-Q + QEC</p>
+            <h3>Real-Time QEC Decoder</h3>
+            <p>Surface-code decoder prototype with C++17 runtime, Python transformer path, benchmark drift checks, and CUDA-Q/cuBLAS/cuRAND hooks.</p>
+            <ul class="project-points">
+              <li>Generated comparison video from local p50/p95/p99 benchmark output.</li>
+              <li>C++17 runtime path: p50 0.000433 ms over 1024 shots on the CPU-only runner.</li>
+              <li>Python transformer prototype path: p50 0.003060 ms on the same benchmark setup.</li>
+            </ul>
           </div>
         </article>
       </div>
